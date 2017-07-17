@@ -5,12 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Switch;
-import android.widget.TextView;
 
-import com.example.cr.designpatterns.Activity.FactoryActivity;
-import com.example.cr.designpatterns.factory.Bread;
-import com.example.cr.designpatterns.factory.BreadFactory;
+import com.example.cr.designpatterns.activity.BuilderActivity;
+import com.example.cr.designpatterns.activity.FactoryActivity;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -25,6 +22,15 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 startActivity(new Intent(MainActivity.this, FactoryActivity.class));
+            }
+        });
+
+        final Button builder_pattern = (Button) findViewById(R.id.builder_pattern);
+        builder_pattern.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                startActivity(new Intent(MainActivity.this, BuilderActivity.class));
             }
         });
     }

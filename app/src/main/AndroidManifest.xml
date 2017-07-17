@@ -16,7 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.FactoryActivity">
+        <activity android:name=".activity.FactoryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT"></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BuilderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"></action>
             </intent-filter>

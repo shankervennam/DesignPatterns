@@ -1,4 +1,4 @@
-package com.example.cr.designpatterns.Activity;
+package com.example.cr.designpatterns.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
