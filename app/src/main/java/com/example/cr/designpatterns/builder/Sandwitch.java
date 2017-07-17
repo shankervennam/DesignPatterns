@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Sandwitch
 {
-    List<Ingradient> ingradientList = new ArrayList<Ingradient>();
+    List<Ingradient> ingradientList = new ArrayList<>();
     int kcal =0;
 
     public void addIngradient(Ingradient i)
